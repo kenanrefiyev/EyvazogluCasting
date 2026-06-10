@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import type { PageRoute } from '../types';
 import { ArrowRight, Play, X, ExternalLink, Film } from 'lucide-react';
 import { clientLogos, agencyStats } from '../data/models';
@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { translatePartnerDesc } from '../data/translations';
 // @ts-ignore
 import aslanPhoto from '../assets/images/AslanEyvazoglu.jpeg';
-
+import signature from '../assets/images/signature.png';
 interface HomePageProps {
   onNavigate: (route: PageRoute, modelId?: string) => void;
 }
@@ -21,10 +21,9 @@ const CAROUSEL_IMAGES = [IMG3, IMG1, IMG2, IMG4, IMG5];
 
 export default function HomePage({ onNavigate }: HomePageProps) {
   const [activeVideoPartner, setActiveVideoPartner] = useState<typeof clientLogos[0] | null>(null);
-  const [centerIndex, setCenterIndex] = useState(1); // default: IMG1 is center
+  const [centerIndex, setCenterIndex] = useState(1);
   const { lang, t } = useLanguage();
 
-  // Returns ordered array [left, center, right] based on centerIndex
   const getOrderedImages = () => {
     const total = CAROUSEL_IMAGES.length;
     const left = (centerIndex - 1 + total) % total;
@@ -37,12 +36,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="bg-white text-neutral-800 selection:bg-[#b50e5f] selection:text-white">
 
-      {/* 1. Editorial 3-Image Carousel — MAG style */}
+      {/* 1. Editorial 3-Image Carousel */}
       <section className="bg-white pt-[32vh] md:pt-[36vh] pb-16 md:pb-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <div className="flex items-center justify-center gap-4 md:gap-8">
 
-            {/* Left — small, shifted down */}
             <div
               className="relative shrink-0 w-[28%] md:w-[26%] mt-16 cursor-pointer group"
               onClick={() => setCenterIndex(leftIdx)}
@@ -56,7 +54,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               </div>
             </div>
 
-            {/* Center — large, tallest */}
             <div
               className="relative shrink-0 w-[38%] md:w-[36%] cursor-pointer group z-10 transition-all duration-500"
               onClick={() => onNavigate('models')}
@@ -70,7 +67,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               </div>
             </div>
 
-            {/* Right — small, shifted down */}
             <div
               className="relative shrink-0 w-[28%] md:w-[26%] mt-16 cursor-pointer group"
               onClick={() => setCenterIndex(rightIdx)}
@@ -86,7 +82,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-          {/* Dot indicators */}
           <div className="flex justify-center gap-2 mt-8">
             {CAROUSEL_IMAGES.map((_, i) => (
               <button
@@ -112,7 +107,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               EST. 2017
             </span>
             <h2 className="text-4xl md:text-5xl font-serif tracking-[0.03em] text-neutral-900 uppercase font-light">
-              HAQQIMIZDA
+              {t('nav.about')}
             </h2>
             <div className="w-16 h-[1px] bg-[#b50e5f] mt-4" />
           </div>
@@ -136,16 +131,16 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
             <div className="pt-6 border-t border-neutral-100 grid grid-cols-2 md:grid-cols-3 gap-6 font-mono text-[9px] tracking-widest text-neutral-500 uppercase">
               <div>
-                <span className="text-[#b50e5f] block mb-1">01 / FİLMLƏR</span>
-                <span className="text-neutral-700">SERİAL & KİNOLAR</span>
+                <span className="text-[#b50e5f] block mb-1">{t('home.about.cat1label')}</span>
+                <span className="text-neutral-700">{t('home.about.cat1')}</span>
               </div>
               <div>
-                <span className="text-[#b50e5f] block mb-1">02 / REKLAM</span>
-                <span className="text-neutral-700">REKLAM KAMPANYALARI</span>
+                <span className="text-[#b50e5f] block mb-1">{t('home.about.cat2label')}</span>
+                <span className="text-neutral-700">{t('home.about.cat2')}</span>
               </div>
               <div>
-                <span className="text-[#b50e5f] block mb-1">03 / MODA</span>
-                <span className="text-neutral-700">MODA PROJEKTLƏRİ</span>
+                <span className="text-[#b50e5f] block mb-1">{t('home.about.cat3label')}</span>
+                <span className="text-neutral-700">{t('home.about.cat3')}</span>
               </div>
             </div>
           </div>
@@ -158,10 +153,10 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
           <div className="text-center space-y-2 mb-16">
             <span className="text-[10px] font-mono tracking-[0.3em] text-neutral-400 uppercase block">
-              PORTFOLİOLARIMIZ
+              {t('home.boards.sub')}
             </span>
             <h2 className="text-3xl md:text-4xl text-neutral-900 font-serif uppercase tracking-wider font-light">
-              KASTİNQ LAYİHƏLƏRİMİZ
+              {t('home.boards.title')}
             </h2>
             <div className="w-12 h-[1px] bg-[#b50e5f] mx-auto mt-4" />
           </div>
@@ -180,7 +175,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 space-y-1">
                 <span className="text-[9px] font-mono tracking-[0.2em] text-[#b50e5f] block uppercase font-bold">HİSSƏ 01</span>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">QADIN</h3>
+                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">{t('home.boards.section1')}</h3>
               </div>
             </div>
 
@@ -196,7 +191,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 space-y-1">
                 <span className="text-[9px] font-mono tracking-[0.2em] text-[#b50e5f] block uppercase font-bold">HİSSƏ 02</span>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">KİŞİ</h3>
+                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">{t('home.boards.section2')}</h3>
               </div>
             </div>
 
@@ -212,7 +207,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 space-y-1">
                 <span className="text-[9px] font-mono tracking-[0.2em] text-[#b50e5f] block uppercase font-bold">HİSSƏ 03</span>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">UŞAQ</h3>
+                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">{t('home.boards.section3')}</h3>
               </div>
             </div>
 
@@ -228,7 +223,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 space-y-1">
                 <span className="text-[9px] font-mono tracking-[0.2em] text-[#b50e5f] block uppercase font-bold">HİSSƏ 04</span>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">TALANTLAR</h3>
+                <h3 className="text-2xl font-serif text-white uppercase tracking-wider font-light">{t('home.boards.section4')}</h3>
               </div>
             </div>
 
@@ -240,10 +235,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-28 bg-neutral-50 border-y border-neutral-100">
         <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-12 text-center space-y-6">
           <span className="font-mono text-[10px] tracking-[0.35em] text-[#b50e5f] uppercase block font-semibold">
-          BİZƏ QOŞULUN
+            {t('home.scout.sub')}
           </span>
           <h2 className="text-3xl md:text-5xl font-serif uppercase tracking-wide text-neutral-900 leading-tight font-extralight">
-EYVAZOĞLU AİLƏSİNİN PARÇASI OLUN          </h2>
+            {t('home.scout.title')}
+          </h2>
           <p className="text-neutral-500 font-sans text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
             {lang === 'AZ'
               ? 'Əgər siz də peşəkar kasting və model biznesində karyera qurmaq, beynəlxalq brendlərin siması olmaq istəyirsinizsə - bu sizin şansınızdır!'
@@ -256,7 +252,7 @@ EYVAZOĞLU AİLƏSİNİN PARÇASI OLUN          </h2>
               onClick={() => onNavigate('apply')}
               className="bg-neutral-900 hover:bg-[#b50e5f] text-white py-4 px-10 text-[10px] font-semibold uppercase tracking-[0.25em] transition-all cursor-pointer focus:outline-none inline-flex items-center gap-2 shadow-md"
             >
-              {lang === 'AZ' ? 'MÜRACİƏT ANKETİNİ DOLDUR' : lang === 'RU' ? 'ПОДАТЬ ЗАЯВКУ СЕЙЧАС' : 'APPLY TO BECOME A MODEL'}
+              {t('apply.header.sub')}
               <ArrowRight size={12} />
             </button>
           </div>
@@ -269,7 +265,7 @@ EYVAZOĞLU AİLƏSİNİN PARÇASI OLUN          </h2>
 
           <div className="text-center space-y-2">
             <span className="text-[9px] font-mono tracking-[0.35em] text-[#b50e5f] uppercase block font-semibold">
-              ƏMƏKDAŞLIQLAR
+              {t('home.collab.sub')}
             </span>
             <h2 className="text-3xl font-serif uppercase tracking-wider font-light text-neutral-900">
               {lang === 'AZ' ? 'RƏSMİ LAYİHƏLƏRİMİZ' : lang === 'RU' ? 'НАШИ ПРОЕКТЫ' : 'OUR PROJECTS'}
@@ -433,22 +429,12 @@ EYVAZOĞLU AİLƏSİNİN PARÇASI OLUN          </h2>
                 <h4 className="font-serif text-neutral-900 text-2xl tracking-wider font-light">Aslan Eyvazoğlu</h4>
               </div>
 
-              <div className="relative max-w-[170px] pt-1">
-                <svg
-                  viewBox="0 0 250 100"
-                  className="w-36 h-auto text-[#b50e5f]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M 35,55 C 20,40 50,15 65,22 C 75,27 65,45 40,58 C 25,65 55,70 80,60 C 105,50 115,40 120,45" />
-                  <path d="M 120,45 C 123,40 128,35 132,45 C 135,48 138,40 142,42 C 145,44 148,40 152,43" strokeWidth="2.3" />
-                  <path d="M 152,43 C 160,20 178,5 170,42" />
-                  <path d="M 170,42 C 172,48 178,45 185,41 C 192,38 198,42 205,39 C 210,36 215,45 220,40" strokeWidth="2.3" />
-                  <path d="M 220,40 C 235,30 242,45 230,55 C 215,68 150,75 100,72 C 60,70 15,62 30,48 C 42,38 95,28 135,32" strokeWidth="2.1" />
-                </svg>
+              <div className="relative pt-1">
+                <img
+                  src={signature}
+                  alt="Signature"
+                  className="w-40 h-auto object-contain invert"
+                />
               </div>
 
               <div className="font-serif italic text-neutral-500 text-xs tracking-wide">

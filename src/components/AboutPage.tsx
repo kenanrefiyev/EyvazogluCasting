@@ -1,5 +1,4 @@
 import type { PageRoute } from '../types';
-import { teamMembers } from '../data/models';
 import { Sparkles, Eye, } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import aslan from  "../assets/images/AslanEyvazoglu.jpeg"

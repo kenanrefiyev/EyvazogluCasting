@@ -17,7 +17,7 @@ export const translations = {
     'footer.contactInfo': 'ƏLAQƏ MƏLUMATLARI',
     'footer.address': '46 City Mall, Ali Mustafayev,Bakı 1100',
     'footer.title': 'EYVAZOĞLU CASTING OFFICIAL',
-    
+
     // Home Page
     'home.hero.sub': 'YENİ NƏSİL KASTİNQ VƏ REKLAM AGENTLİYİ',
     'home.hero.heading1': 'ZƏRİFLİK, GÖZƏLLİK',
@@ -30,7 +30,7 @@ export const translations = {
     'home.partners.watchVideo': 'VİDEO REKLAMI İZLƏ',
     'home.partners.videoDesc': 'Bu tərəfdaşlıq layihəsi çərçivəsində tərəfimizdən təmin olunan peşəkar simaların iştirakı ilə lentə alınmış video videoçarx.',
     'home.partners.close': 'Bağla',
-    
+
     // Stats
     'stats.experience': 'İl Təcrübə',
     'stats.models': 'Aktiv Sima',
@@ -41,7 +41,7 @@ export const translations = {
     'home.featured.sub': 'HƏFTƏNİN SİMALARI',
     'home.featured.title': 'ƏN ÇOX TƏLƏB EDİLƏN SİMALAR',
     'home.featured.allBtn': 'BÜTÜN KATALOQU GÖR',
-    
+
     // Company Profile
     'home.profile.sub': 'ŞİRKƏT PROFİLİ',
     'home.profile.title': 'PEŞƏKAR KASTİNQ XİDMƏTLƏRİ',
@@ -54,7 +54,25 @@ export const translations = {
     'home.profile.services': 'XİDMƏT SAHƏLƏRİMİZ',
     'home.profile.room': 'Kasting otağımız',
     'home.profile.roomDesc': 'Port Baku Towers-də yerləşən, ən müasir kameralar və işıq sistemləri ilə təchiz olunmuş kasting otağımızda peşəkar sınaq çəkilişləri və ssenari oxunuşları həyata keçirilir.',
-    
+
+    'home.boards.sub': 'PORTFOLİOLARIMIZ',
+    'home.boards.title': 'KASTİNQ LAYİHƏLƏRİMİZ',
+    'home.boards.section1': 'QADIN',
+    'home.boards.section2': 'KİŞİ',
+    'home.boards.section3': 'UŞAQ',
+    'home.boards.section4': 'TALANTLAR',
+
+
+
+
+    'home.about.cat1label': '01 / FİLMLƏR',
+    'home.about.cat1': 'SERİAL & KİNOLAR',
+    'home.about.cat2label': '02 / REKLAM',
+    'home.about.cat2': 'REKLAM KAMPANYALARI',
+    'home.about.cat3label': '03 / MODA',
+    'home.about.cat3': 'MODA PROJEKTLƏRİ',
+
+
     // Registration banner
     'home.reg.title': 'KASTİNQƏ QEYDİYYAT',
     'home.reg.desc': 'Filmlərdə, seriallarda və dünyaca məşhur brendlərin reklam çarxlarında çəkilmək şansını qaçırmayın.',
@@ -75,6 +93,9 @@ export const translations = {
     'home.mission.feat2Desc': 'İstehsalçı şirkətlərə ən qısa zamanda etibarlı, nizam-intizamlı və rollara tam uyğun heyət təqdim etmək.',
     'home.mission.join': 'BİZƏ QOŞULUN',
 
+    'home.collab.sub': 'ƏMƏKDAŞLIQLAR',
+    'home.scout.sub': 'BİZƏ QOŞULUN',
+    'home.scout.title': 'EYVAZOĞLU AİLƏSİNİN PARÇASI OLUN',
     // About Page
     'about.watermark': 'EST. 2018',
     'about.sub': 'HEKAYƏMİZ VƏ DƏYƏRLƏRİMİZ',
@@ -98,6 +119,8 @@ export const translations = {
     'about.trust.desc': 'Çəkiliş heyəti ilə aktyorlar arasında tam şəffaf müqavilələr imzalayaraq hər iki tərəfin hüquqlarını qoruyur, etik kasting qaydalarına riayət edirik.',
     'about.team.sub': 'PEŞƏKAR HEYƏTİMİZ',
     'about.team.title': 'LAYİHƏNİZİ İDARƏ EDƏN PEŞƏKARLAR',
+
+
 
     // Models Page
     'models.header.title': 'EYVAZOĞLU SİMALARI',
@@ -124,7 +147,7 @@ export const translations = {
     'models.add.btn': 'YENİ SİMA ƏLAVƏ ET',
     'models.add.title': 'Baza Üçün Yeni Sima Əlavə Et',
     'models.add.desc': 'Kastinq bazasına yeni istedadın fiziki göstəricilərini, fotosunu və ətraflı məlumatlarını əlavə edin.',
-    
+
     // Model Detail Page
     'modelDetail.back': 'GERİ QAYIT',
     'modelDetail.categorySuffix': 'SİMASI',
@@ -278,6 +301,22 @@ export const translations = {
     'home.profile.room': 'Наш кастинг-зал',
     'home.profile.roomDesc': 'В нашем кастинг-зале, расположенном в Port Baku Towers и оснащенном современными камерами и системами освещения, проводятся профессиональные кинопробы, тесты и чтения сценариев.',
 
+    'home.boards.sub': 'НАШЕ ПОРТФОЛИО',
+    'home.boards.title': 'НАШИ КАСТИНГ-ПРОЕКТЫ',
+    'home.boards.section1': 'ЖЕНЩИНЫ',
+    'home.boards.section2': 'МУЖЧИНЫ',
+    'home.boards.section3': 'ДЕТИ',
+    'home.boards.section4': 'ТАЛАНТЫ',
+
+
+
+
+    'home.about.cat1label': '01 / ФИЛЬМЫ',
+    'home.about.cat1': 'СЕРИАЛЫ И КИНО',
+    'home.about.cat2label': '02 / РЕКЛАМА',
+    'home.about.cat2': 'РЕКЛАМНЫЕ КАМПАНИИ',
+    'home.about.cat3label': '03 / МОДА',
+    'home.about.cat3': 'МОДНЫЕ ПРОЕКТЫ',
     // Registration banner
     'home.reg.title': 'РЕГИСТРАЦИЯ НА КАСТИНГ',
     'home.reg.desc': 'Не упустите шанс сняться в фильмах, сериалах и рекламных роликах всемирно известных брендов.',
@@ -298,6 +337,10 @@ export const translations = {
     'home.mission.feat2Desc': 'Предоставление продюсерским компаниям надежного, дисциплинированного и идеально подходящего состава в кратчайшие сроки.',
     'home.mission.join': 'ПРИСОЕДИНЯЙТЕСЬ К НАМ',
 
+    'home.scout.sub': 'ПРИСОЕДИНЯЙТЕСЬ',
+    'home.scout.title': 'СТАНЬТЕ ЧАСТЬЮ СЕМЬИ EYVAZOĞLU',
+
+    'home.collab.sub': 'СОТРУДНИЧЕСТВО',
     // About Page
     'about.watermark': 'ОСН. 2018',
     'about.sub': 'НАША ИСТОРИЯ И ЦЕННОСТИ',
@@ -501,6 +544,27 @@ export const translations = {
     'home.profile.room': 'Our Casting Room',
     'home.profile.roomDesc': 'Located in Port Baku Towers, our custom casting room is equipped with top camera gear and professional lighting for screenauditions and script readings.',
 
+    'home.boards.sub': 'OUR PORTFOLIOS',
+    'home.boards.title': 'CASTING BOARDS',
+    'home.boards.section1': 'WOMEN',
+    'home.boards.section2': 'MEN',
+    'home.boards.section3': 'KIDS',
+    'home.boards.section4': 'TALENTS',
+
+
+
+
+    'home.collab.sub': 'COLLABORATIONS',
+    'home.about.cat1label': '01 / FILMS',
+    'home.about.cat1': 'SERIES & CINEMA',
+    'home.about.cat2label': '02 / COMMERCIAL',
+    'home.about.cat2': 'AD CAMPAIGNS',
+    'home.about.cat3label': '03 / FASHION',
+    'home.about.cat3': 'FASHION PROJECTS',
+
+
+    'home.scout.sub': 'JOIN US',
+    'home.scout.title': 'BECOME PART OF THE EYVAZOĞLU FAMILY',
     // Registration banner
     'home.reg.title': 'REGISTER FOR CASTING',
     'home.reg.desc': 'Don’t miss your chance to star in movies, series, and commercials for world-famous brands.',
@@ -686,7 +750,7 @@ export function translateProperty(val: string, lang: Lang): string {
     'sarı': { AZ: 'Sarı', RU: 'Русый', ENG: 'Blonde' },
     'açıq şabalıdı': { AZ: 'Açıq Şabalıdı', RU: 'Светло-каштановый', ENG: 'Light Chestnut' },
     'şabalıdı': { AZ: 'Şabalıdı', RU: 'Каштановый', ENG: 'Chestnut' },
-    
+
     'yaşıl': { AZ: 'Yaşıl', RU: 'Зеленый', ENG: 'Green' },
     'mavi': { AZ: 'Mavi', RU: 'Синий', ENG: 'Blue' },
     'ela': { AZ: 'Ela', RU: 'Ореховый', ENG: 'Hazel' },
@@ -733,7 +797,7 @@ export function translateRole(role: string, lang: Lang): string {
 export function translateBio(bio: string, lang: Lang): string {
   // Let's translate some of the features/bios dynamically using signature keywords
   if (bio.includes('Aylin ölkənin aparıcı podiumlarında')) {
-    return lang === 'AZ' ? bio : lang === 'RU' 
+    return lang === 'AZ' ? bio : lang === 'RU'
       ? 'Айлин — высококлассная профессиональная модель, работающая на ведущих мировых подиумах и украшающая обложки модных журналов. Любимица брендов благодаря своей минималистичной мимике и фотогеничности.'
       : 'Aylin is a highly classified professional model featured on the country’s leading runways and covers of fashion journals. Loved by brands for her minimalist expression and photogenic qualities.';
   }
