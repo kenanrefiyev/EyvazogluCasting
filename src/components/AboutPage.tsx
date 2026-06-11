@@ -1,7 +1,7 @@
 import type { PageRoute } from '../types';
 import { Sparkles, Eye, } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import aslan from  "../assets/images/AslanEyvazoglu.jpeg"
+import aslan from "../assets/images/AslanEyvazoglu.jpeg"
 
 interface AboutPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -14,7 +14,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
     <div className="relative bg-white text-neutral-900 pt-32 pb-24 overflow-hidden">
       {/* Editorial Watermark */}
       <div className="absolute left-10 top-24 select-none pointer-events-none opacity-[0.04] font-serif text-[15vw] leading-none tracking-[0.2em] uppercase text-neutral-900">
-        EST. 2018
+        EST. 2017
       </div>
 
       <div className="max-w-8xl mx-auto px-4 md:px-8 lg:px-12 relative z-10 space-y-24">
@@ -179,23 +179,23 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
 
               <div className="space-y-6 border-l-2 border-gold-500/30 pl-8 py-4">
                 <p className="text-sm md:text-base text-neutral-700 leading-relaxed font-sans font-light">
-                  Eyvazoğlu Casting MMC-nin təsisçisi Aslan Eyvazoğlu Baki Şəhərində 1991-10-02 Tarixində Anadan Olmuşdur. Əslən Qərbi Azərbaycanlidir.
+                  {t('about.founder.bio1')}
                 </p>
                 <p className="text-sm md:text-base text-neutral-600 leading-relaxed font-sans font-light">
-                  Təhsilini 13 Sayli Orta Məktəbdə Bitirmişdir. Ali Təhsilini isə Naxcivan Dovlət Universiteti Umumi İqtisadiyyat Biznesin Təşkili Fakultəsində Bitirmişdir.
+                  {t('about.founder.bio2')}
                 </p>
               </div>
 
               {/* Stats or highlights */}
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="space-y-2">
-                  <p className="text-2xl font-serif text-gold-500">2018</p>
+                  <p className="text-2xl font-serif text-gold-500">2017</p>
                   <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider">
                     {lang === 'AZ' ? 'Təsis Ili' : lang === 'RU' ? 'Год основания' : 'Founded'}
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-2xl font-serif text-gold-500">Baki</p>
+                  <p className="text-2xl font-serif text-gold-500">Bakı</p>
                   <p className="text-xs text-neutral-500 font-mono uppercase tracking-wider">
                     {lang === 'AZ' ? 'Mərkəz' : lang === 'RU' ? 'Центр' : 'Headquarters'}
                   </p>

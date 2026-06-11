@@ -15,7 +15,7 @@ export const translations = {
     'footer.desc': 'Peşəkar kasting bazamız, təcrübəli heyətimiz və etibarlı tərəfdaşlığımız ilə Azərbaycan kino, serial, reklam və klip sahəsində ən yüksək standartda simaların çəkiliş koordinasiyasını həyata keçiririk.',
     'footer.quickLinks': 'SÜRƏTLİ KEÇİDLƏR',
     'footer.contactInfo': 'ƏLAQƏ MƏLUMATLARI',
-    'footer.address': '46 City Mall, Ali Mustafayev,Bakı 1100',
+    'footer.address':' 46 City Mall, Ali Mustafayev,Bakı 1100',
     'footer.title': 'EYVAZOĞLU CASTING OFFICIAL',
 
     // Home Page
@@ -120,7 +120,8 @@ export const translations = {
     'about.team.sub': 'PEŞƏKAR HEYƏTİMİZ',
     'about.team.title': 'LAYİHƏNİZİ İDARƏ EDƏN PEŞƏKARLAR',
 
-
+    'about.founder.bio1': 'Eyvazoğlu Casting MMC-nin təsisçisi Aslan Eyvazoğlu Bakı Şəhərində 1991-10-02 Tarixində Anadan Olmuşdur. Əslən Qərbi Azərbaycanlıdır.',
+    'about.founder.bio2': 'Təhsilini 13 Saylı Orta Məktəbdə Bitirmişdir. Ali Təhsilini isə Naxçıvan Dövlət Universiteti Ümumi İqtisadiyyat, Biznesin Təşkili Fakultəsində Bitirmişdir.',
 
     // Models Page
     'models.header.title': 'EYVAZOĞLU SİMALARI',
@@ -365,6 +366,9 @@ export const translations = {
     'about.team.sub': 'НАША КОМАНДА',
     'about.team.title': 'ПРОФЕССИОНАЛЫ, УПРАВЛЯЮЩИЕ ВАШИМ ПРОЕКТОМ',
 
+
+    'about.founder.bio1': 'Основатель ООО Eyvazoğlu Casting Аслан Эйвазоглу родился 02.10.1991 года в городе Баку. Родом из Западного Азербайджана.',
+    'about.founder.bio2': 'Окончил среднюю школу №13. Высшее образование получил в Нахчыванском государственном университете на факультете общей экономики и организации бизнеса.',
     // Models Page
     'models.header.title': 'ЛИЦА EYVAZOĞLU',
     'models.header.sub': 'ОБШИРНЫЙ КАТАЛОГ ПОРТФОЛИО',
@@ -608,6 +612,9 @@ export const translations = {
     'about.trust.desc': 'By signing fully transparent legal contracts, we safeguard the rights of both production crews and actors under ethical rules.',
     'about.team.sub': 'OUR TEAM',
     'about.team.title': 'THE PROFESSIONALS DRIVING YOUR PROJECT',
+
+    'about.founder.bio1': 'Aslan Eyvazoğlu, the founder of Eyvazoğlu Casting LLC, was born on October 2, 1991, in Baku. He is originally from Western Azerbaijan.',
+    'about.founder.bio2': 'He completed his secondary education at School No. 13. He received his higher education from Nakhchivan State University, majoring in General Economics and Business Administration.',
 
     // Models Page
     'models.header.title': 'EYVAZOĞLU TALENTS',

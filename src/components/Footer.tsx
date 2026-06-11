@@ -1,6 +1,6 @@
 import type { PageRoute } from '../types';
 import { Mail, Phone, MapPin, Award, ArrowUp } from 'lucide-react';
-import {FaFacebook,FaInstagram,FaYoutube} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import logo from '../assets/images/mainlogo.png'
@@ -147,7 +147,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             </h3>
             <ul className="space-y-4 text-xs">
               <li className="flex items-start space-x-3 text-neutral-500">
-                <MapPin size={16} className="text-[#b50e5f] shrink-0 mt-0.5" />
+                <MapPin size={14} className="text-[#b50e5f] shrink-0 mt-0.5" />
                 <span>
                   {t('footer.address')}
                 </span>
@@ -155,7 +155,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li className="flex items-center space-x-3 text-neutral-500">
                 <Phone size={14} className="text-[#b50e5f] shrink-0" />
                 <a href="tel:+994554191902" className="hover:text-[#b50e5f] transition-colors">
-                 994 55 419 19 02
+                  994 55 419 19 02
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-neutral-500">
